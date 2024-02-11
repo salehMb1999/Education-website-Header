@@ -6,15 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="font-poppinsReg container mx-auto">
+  <body class="font-poppinsReg container">
     <header>
-      <div class="flex justify-between items-center p-8">
+      <div class="flex justify-between items-center p-4 lg:p-8">
         <div>
           <a class="font-poppinsSemiBold text-2xl text-[#5c48ee]" href="#"
             >Learning</a
           >
         </div>
-        <nav class="flex gap-x-12">
+        <nav class="flex lg:gap-x-12">
           <li class="list-none">
             <a
               class="text-gray-900 py-2 px-4 hover:text-[#5c48ee] transition-all duration-300 ease-in-out"
@@ -59,30 +59,56 @@
           </li>
         </nav>
       </div>
-      <div class="grid grid-cols-2 gap-20">
-        <div>
-          <h1>
-            Best Learning <br /><span>Education Platform</span><br /><span
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-20 min-h-[calc(100vh-100px)]"
+      >
+        <div
+          class="flex flex-col items-center justify-center text-center lg:text-left"
+        >
+          <h1
+            class="font-poppinsMed text-5xl leading-[3rem] w-full text-[#0f1e6a]"
+          >
+            Best Learning <br /><span class="font-poppinsBold text-[#0f1e6a]"
+              >Education Platform</span
+            ><br /><span class="font-poppinsBold text-[#5c48f2]"
               >in The World</span
             >
           </h1>
-          <p>
+          <p class="my-8 text-gray-900">
             Unlock your full learning potential with our intuitive education
             platform. Seamlessly blending technology and education, we provide
             an immersive learning environment that combines interactive lessons,
             virtual classrooms, and intelligent feedback.
           </p>
-          <form>
-            <input type="text" placeholder="What do you want to learn?" />
-            <button>Search Course</button>
+          <form
+            class="flex items-center w-full lg:justify-start justify-center"
+          >
+            <input
+              class="p-4 max-w-72 w-full shadow-md outline-0"
+              type="text"
+              placeholder="What do you want to learn?"
+            />
+            <button class="shadow-md bg-[#5c48f2] text-white text-nowrap p-4">
+              Search Course
+            </button>
           </form>
         </div>
-        <div class="grid grid-cols-2 gap-8">
-          <img class="w-full max-w-80" src="./../img/header-1.jpg" alt="img1" />
-          <img class="w-full max-w-80" src="./../img/header-2.jpg" alt="img2" />
-          <div>
-            <ul>
-              <li>Get 30% off on every 1st month</li>
+        <div class="grid grid-cols-2 gap-8 place-content-center relative">
+          <img
+            class="w-full max-w-72 rounded-xl justify-self-center"
+            src="./../img/header-1.jpg"
+            alt="img1"
+          />
+          <img
+            class="w-full max-w-72 lg:-translate-y-40 rounded-xl"
+            src="./../img/header-2.jpg"
+            alt="img2"
+          />
+          <div
+            class="absolute max-w-80 w-full px-8 py-4 text-white bg-gradient-to-r from-[rgba(92,72,238,.6)] to-[rgba(15,30,106,.4)] top-1/2 left-1/2 -translate-x-1/2 translate-y-2 rounded-xl backdrop-blur-md"
+          >
+            <ul class="list-disc">
+              <li class="mb-4">Get 30% off on every 1st month</li>
               <li>Expert teachers</li>
             </ul>
           </div>
